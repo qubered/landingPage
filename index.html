@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+          0% { opacity: 0; }
+          100% { opacity: 1; }
+        }
+      </style>
     <title>Jayden Nawotka</title>
 </head>
-<body>
-    
+<body class="relative">
+    <!-- Background -->
+    <div class="h-screen fixed inset-0 bg-stone-900"></div> 
+
+    <div class="flex h-screen justify-center items-center z-10 relative">
+        <div class="w-1/2 h-1/2 p-4 text-center text-white flex flex-col justify-center items-center opacity-0 animate-[fadeIn_1s_ease-in_forwards]">
+            <div>
+                <h1 class="text-2xl">Hello!</h1>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 </html>
